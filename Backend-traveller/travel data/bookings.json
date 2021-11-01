@@ -1,0 +1,23 @@
+[
+  {
+    "tour": ["60f693e24bee600f2a81e337"],
+    "user": ["sijiewenunsw@gmail.com"],
+    "amount": 2,
+    "price": 778,
+    "paid": true
+  },
+  {
+    "tour": ["60f69a2e4bee600f2a81e33a"],
+    "user": ["qinjiabo1990@gmail.com"],
+    "amount": 3,
+    "price": 1107,
+    "paid": true
+  },
+  {
+    "tour": [ "60f69d144bee600f2a81e33c"],
+    "user": ["guonan627@hotmail.com"],
+    "amount": 5,
+    "price": 2245,
+    "paid": true
+  }
+]
