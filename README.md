@@ -17,7 +17,7 @@ Best traveller website is an online booking travel platform, which allows custom
 
 # Site Map
 
-![Site Map](./public/img/readme/sitemap.png)
+![Site Map](./Backend-traveller/img/readme/sitemap.png)
 
 # Tech Stack
 
