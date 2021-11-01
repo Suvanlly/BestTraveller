@@ -6,8 +6,8 @@ const router = express.Router();
 router.get('/', tourController.getAllTours);
 router.get('/:slug', tourController.getTour);
 router.post('/', tourController.createTour);
-router.patch('/:id', tourController.updateTour);
-router.delete('/:id', tourController.deleteTour);
+router.patch('/:slug', tourController.updateTour);
+router.delete('/:slug', tourController.deleteTour);
 
 router.post('/:tourId/availabilities/:availabilityId', tourController.addAvailabilityToTour);
 router.delete('/:tourId/availabilities/:availabilityId', tourController.deleteAvailabilityFromTour)

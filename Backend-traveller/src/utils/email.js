@@ -6,9 +6,9 @@ const htmlToText = require('html-to-text')
 module.exports = class Email {
   constructor(user, url) {
     this.to = user.email || user
-    this.firstName = user.firstName || 'user'
+    this.firstName = user.firstName || 'there'
     this.url = url
-    this.from = 'sijiewenunsw@gmail.com'
+    this.from = 'bestravellers@gmail.com'
   }
 
   newTransport() {
@@ -48,7 +48,6 @@ module.exports = class Email {
 
   async sendWelcome() {
     await this.send('welcome', 'Welcome to BestTraveller')
-    console.log('Email sent')
   }
 
   async sendPasswordReset() {
@@ -56,11 +55,9 @@ module.exports = class Email {
       'passwordReset',
       'Your password reset token (valid for only 10 mins)'
     )
-    console.log('Reset password email sent')
   }
 
   async sendSubscribe() {
     await this.send('subscribe', 'Thank you for subscribing BestTraveller')
-    console.log('Subscribtion email sent')
   }
 }

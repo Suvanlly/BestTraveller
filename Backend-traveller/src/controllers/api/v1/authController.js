@@ -71,7 +71,6 @@ exports.forgotPassword = async (req, res) => {
       message: 'Token sent to email'
     })
   } catch (err) {
-    console.log(err)
     return res.status(500).send({ error: 'There was an error sending the email. Try again later' })
   }
 }
@@ -104,10 +103,7 @@ exports.resetPassword = async (req, res) => {
 
 exports.updatePassword = (async (req, res, next) => {
   // Get user from collection
-  console.log(req.body)
   const user = await User.findOne({_id: req.body.email}).select('+password')
-  console.log(user.password)
-  console.log(req.body.currentPassword)
   // Check if POSTed current password is correct
   if (!(await user.correctPassword(req.body.currentPassword, user.password))) {
     return next('Your current password is wrong')

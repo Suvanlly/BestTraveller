@@ -2,8 +2,8 @@ const Review = require('../../../models/review')
 const User = require('../../../models/user')
 
 exports.createReview = async (req, res) => {
-  const { rating, comment, tour, user, tourTitle, userImage, tourImage } = req.body;
-  const review = new Review({ rating, comment, tour, user, tourTitle, userImage, tourImage })
+  const { rating, comment, tour, user, userFirstName, tourTitle, userImage, tourImage } = req.body;
+  const review = new Review({ rating, comment, tour, user, userFirstName, tourTitle, userImage, tourImage })
 
   try {
     await review.save();
@@ -38,7 +38,6 @@ exports.getReview = async (req, res) => {
   const { id } = req.params;
   const review = await Review.findById(id)
   const user = await User.findOne({firstName: review.user })
-  console.log(user)
   if (!review) {
     return res.sendStatus(404);
   }

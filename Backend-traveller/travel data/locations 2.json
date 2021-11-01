@@ -1,0 +1,42 @@
+[
+  {
+    "city": "Melbourne",
+    "state": "Victoria",
+    "tour": ["60f693e24bee600f2a81e337"]
+  },
+  {
+    "city": "Sydney",
+    "state": "New South Wales",
+    "tour": ["60f69a2e4bee600f2a81e33a"]
+  },
+  {
+    "city": "Hobart",
+    "state": "Tasmania",
+    "tour": ["60f69d144bee600f2a81e33c"]
+  },
+  {
+    "city": "Brisbane",
+    "state": "Queensland",
+    "tour": ["60f69e4a4bee600f2a81e33f"]
+  },
+  {
+    "city": "Gold Coast",
+    "state": "Queensland",
+    "tour": ["60f69ec24bee600f2a81e341"]
+  },
+  {
+    "city": "Cairns",
+    "state": "Queensland",
+    "tour": ["60f69f744bee600f2a81e343"]
+  },
+  {
+    "city": "Adelaide",
+    "state": "South Australia",
+    "tour": ["60f6a0284bee600f2a81e345"]
+  },
+  {
+    "city": "Darwin",
+    "state": "Northern Territory",
+    "tour": ["60f6a0284bee600f2a81e345"]
+  }
+]

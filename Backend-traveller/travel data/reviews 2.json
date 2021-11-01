@@ -1,0 +1,20 @@
+[
+  {
+    "user": ["sijiewenunsw@gmail.com"],
+    "tour": ["60f693e24bee600f2a81e337"],
+    "rating": 4,
+    "comment": "I am very satisfied with this tour."
+  },
+  {
+    "user": ["qinjiabo1990@gmail.com"],
+    "tour": ["60f69a2e4bee600f2a81e33a"],
+    "rating": 5,
+    "comment": "Everthing is perfect but the dinner."
+  },
+  {
+    "user": ["guonan627@hotmail.com"],
+    "tour": ["60f69d144bee600f2a81e33c"],
+    "rating": 3,
+    "comment": "Not bad."
+  }
+]

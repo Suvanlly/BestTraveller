@@ -94,8 +94,7 @@ const tourSchema = new Schema({
     required: true,
     validate: {
       validator: (date) =>
-        moment(date, 'DD/MM/YYYY', true).isValid() &&
-        moment(date, 'DD/MM/YYYY').isSameOrAfter(moment()),
+        moment(date, 'DD/MM/YYYY', true).isValid(),
       msg: 'Invalid Date Format',
     },
   },

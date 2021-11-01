@@ -6,7 +6,7 @@ const Review = require('../../../../models/review');
 
 // PUT one tour
 exports.updateTour = async (req, res) => {
-  const { id } = req.params;
+  const { slug } = req.params;
   const { state, city, title, subtitle, introduction, highlights, included,
     itinerary, price, image, startDate, endDate, map } = req.body;
 
@@ -14,7 +14,7 @@ exports.updateTour = async (req, res) => {
     return res.status(400).send('End date should not be prior to the Start date');
   }
 
-  const tour = await Tour.findByIdAndUpdate(id,
+  const tour = await Tour.findOneAndUpdate({slug},
     { state, city, title, subtitle, introduction, highlights, included, itinerary, price, image, map, startDate, endDate },
     {new: true, runValidators: true}, (err)=>{
       if(err){
@@ -29,8 +29,8 @@ exports.updateTour = async (req, res) => {
 
 // DELETE one tour
 exports.deleteTour = async (req, res) => {
-  const { id } = req.params;
-  const tour = await Tour.findByIdAndRemove(id).exec();
+  const { slug } = req.params;
+  const tour = await Tour.findOneAndRemove({slug}).exec();
   if (!tour) {
     return res.sendStatus(404);
   }

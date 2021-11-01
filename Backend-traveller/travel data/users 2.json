@@ -1,0 +1,72 @@
+[
+  {
+    "email": "sijiewenunsw@gmail.com",
+    "firstName": "Kyrie",
+    "lastName": "Wen",
+    "dateOfBirth": "02/02/1980",
+    "password": "123456",
+    "role": "user",
+    "bookings" : [],
+    "reviews":[]
+  },
+  {
+    "email": "sophiesun.au@gmail.com",
+    "firstName": "Sophie",
+    "lastName": "Sun",
+    "dateOfBirth": "02/09/1990",
+    "password": "1234567",
+    "role": "admin",
+    "bookings" : [],
+    "reviews":[]
+  },
+  {
+    "email": "guonan627@hotmail.com",
+    "firstName": "Nan",
+    "lastName": "Guo",
+    "dateOfBirth": "09/10/1997",
+    "password": "12345678",
+    "role": "user",
+    "bookings" : [],
+    "reviews":[]
+  },
+  {
+    "email": "qinjiabo1990@gmail.com",
+    "firstName": "Bob",
+    "lastName": "Qin",
+    "dateOfBirth": "08/11/1987",
+    "password": "a12345678",
+    "role": "user",
+    "bookings" : [],
+    "reviews":[]
+  },
+  {
+    "email": "haoranbackup4@gmail.com",
+    "firstName": "Haoran",
+    "lastName": "Zhang",
+    "dateOfBirth": "19/08/1989",
+    "password": "asd123456",
+    "role": "user",
+    "bookings" : [],
+    "reviews":[]
+  },
+  {
+    "email": "elbert.fang@outlook.com",
+    "firstName": "Elbert",
+    "lastName": "Fang",
+    "dateOfBirth": "09/06/1987",
+    "password": "aaa123",
+    "role": "user",
+    "bookings" : [],
+    "reviews":[]
+  },
+  {
+    "email": "yangliuwork0327@qq.com",
+    "firstName": "Yang",
+    "lastName": "Liu",
+    "dateOfBirth": "09/09/1990",
+    "password": "sss123",
+    "role": "admin",
+    "bookings" : [],
+    "reviews":[]
+  }
+]

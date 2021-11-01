@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const mongoose = require('mongoose');
 const config = require('../config/app');
 
@@ -14,6 +15,5 @@ module.exports = async function () {
     useCreateIndex: true,
     useFindAndModify: false,
   });
-  console.log('connect to db');
   return connection.connection.db;
 };

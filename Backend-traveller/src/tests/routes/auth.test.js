@@ -7,7 +7,6 @@ const User = require('../../models/user');
 describe('/api/v1/auth', () => {
   // Setup testing & adding default test user
   beforeAll(async () => {
-    await User.deleteMany({});
     const user = new User({
       email: 'test@gmail.com',
       password: '123456789',
@@ -20,13 +19,13 @@ describe('/api/v1/auth', () => {
   });
   // Finished testing & delete testing data
   afterAll(async () => {
-    await User.deleteMany({});
+    // await User.deleteMany({});
     await mongoose.disconnect();
   });
 
   // User login
   describe('POST', () => {
-    const request = (data) => supertest(app).post('/api/v1/auth').send(data);
+    const request = (data) => supertest(app).post('/api/v1/auth/login').send(data);
 
     // Valid email & password
     it('should return 200 if request contain valid email and password', async () => {

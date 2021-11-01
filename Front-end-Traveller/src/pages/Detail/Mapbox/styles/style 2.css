@@ -1,0 +1,11 @@
+.mapboxgl-ctrl-attrib-inner {
+  display: none;
+}
+
+.marker {
+  background-image: url("../img/pin.png");
+  background-size: cover;
+  width: 32px;
+  height: 40px;
+  cursor: pointer;
+}

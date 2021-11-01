@@ -8,6 +8,7 @@ const reviewSchema = new Schema(
       ref: 'User',
       required: [true, 'Review must belong to a user'],
     },
+    userFirstName: String,
     userImage: String,
     tourTitle: String,
     tourImage: String,

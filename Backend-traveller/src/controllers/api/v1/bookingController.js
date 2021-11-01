@@ -5,6 +5,7 @@ const Tour = require('../../../models/tour/tour');
 exports.getCheckoutSession = async (req, res, next) => {
    // Get the currently booked tour
   const tour = await Tour.findById(req.params.tourId)
+
    // Create checkout session
   const session = await stripe.checkout.sessions.create({
      payment_method_types: ['card'],

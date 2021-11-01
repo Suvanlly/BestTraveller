@@ -21,21 +21,21 @@ afterAll(async () => {
 
 // post
 it('should return 201 if post is valid',  async () => {
-    const res = await request 
-        .post("/api/v1/bookings") 
-        .send({price: 250, paid: true}); 
+    const res = await request
+        .post("/api/v1/bookings")
+        .send({price: 250, paid: true});
         expect(res.body.booking).toHaveProperty("_id");
         expect(res.body.booking.price).toBe(250);
         expect(res.body.booking.paid).toBe(true);
         expect(res.statusCode).toBe(201);
-})  
+})
 // get all
 it('should return 200 if get all is valid', async ()=>{
-    const res = await request 
+    const res = await request
     .get("/api/v1/bookings")
     expect(res.statusCode).toBe(200);
 })
-// get by id 
+// get by id
 it('should return 200 if get by id is valid', async ()=>{
     const res = await request
     .get("/api/v1/bookings/5c793331bc99fc1510b846b8")
@@ -51,9 +51,9 @@ it('should return 200 if patch is valid', async ()=>{
     expect(res.statusCode).toBe(200);
 })
 
-// delete 
+// delete
 it('should return 200 if delete is valid', async ()=>{
-    const res = await request 
+    const res = await request
     .delete("/api/v1/bookings/5c793331bc99fc1510b846b8")
     expect(res.statusCode).toBe(204);
 })
