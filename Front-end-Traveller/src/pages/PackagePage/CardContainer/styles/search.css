@@ -1,0 +1,21 @@
+.select {
+  font-family: Poppins;
+  margin-top: 20px;
+  height: 38px;
+}
+
+.slider {
+  width: 70%;
+  margin-top: 25px;
+}
+
+.react-datepicker-wrapper {
+  margin-top: 20px;
+}
+
+.react-datepicker__input-container input {
+  height: 38px;
+  border-radius: 3px;
+  font-family: Poppins;
+  padding-left: 10px;
+}
