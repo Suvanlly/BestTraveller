@@ -8,7 +8,6 @@ Best traveller website is an online booking travel platform, which allows custom
 
 - Authentication
 - Reset password
-- Update personal infomation
 - Search and filter travel packages
 - Book travel packages
 - Payment via stripe payment integration
@@ -16,29 +15,20 @@ Best traveller website is an online booking travel platform, which allows custom
 - Rate and comment the travel package
 - Check given rates and comments
 
+# Site Map
+
+![Site Map](./public/img/readme/sitemap.png)
+
 # Tech Stack
 
 Front-end:
 
-- Library: React.js Redux, React router, Styled Component
-- Payment: Stripe
-- Validation: Yup, Fromsmik
-- Alert banner: Sweetalert
-- Map: Mapbox
-- Middleware: Redux-thunk,
-- Storage: Redux-persist
+- React.js
 
 Back-end:
 
-- Library: Express
-- Encryption: Bcryptjs, Crypto
-- Cross-domain: Cors
-- Email: Slugify, Nodemailer
-- Image uploader: sharp
-- Validation: Express-validator
-- Authentification: Jsonwebtoken
-- Database: Mongoose
-
+- Node.js - Express
+- Mongoose
 
 # Prerequisites
 
