@@ -1,4 +1,3 @@
-#Bob adds this text here - 18/6/2021
 
 # Getting Started with Create React App
 
