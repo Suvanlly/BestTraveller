@@ -63,8 +63,8 @@ Node.js environment
 
 - yangliu0327 (yangliuwork0327@qq.com)
 - elbert.fang (elbert.fang@outlook.com)
-- SophieSun.JR (sophiesun.au@gmail.com)
-- KyrieWen.jr (sijiewenunsw@gmail.com)
+- SophieSun (sophiesun.au@gmail.com)
+- KyrieWen (sijiewenunsw@gmail.com)
 - Bob Qin (qinjiabo1990@gmail.com)
-- Nan Guo.jr (guonan627@hotmail.com)
+- Nan Guo (guonan627@hotmail.com)
 - Zhang-Haoran (haoranbackup4@gmail.com)
