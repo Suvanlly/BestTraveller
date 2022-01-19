@@ -22,7 +22,7 @@ Front-end:
 
 - Library: React.js Redux, React router, Styled Component
 - Payment: Stripe
-- Validation: Yup, Fromsmik
+- Validation: Yup, Formik
 - Alert banner: Sweetalert
 - Map: Mapbox
 - Middleware: Redux-thunk,
