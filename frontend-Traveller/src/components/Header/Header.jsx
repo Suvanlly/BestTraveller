@@ -11,6 +11,7 @@ import {
   SubText,
   Line,
 } from "./styles/header"
+import configuration from "../../config/config"
 
 const Header = ({ isLoggedIn }) => (
   <>
@@ -23,7 +24,14 @@ const Header = ({ isLoggedIn }) => (
         <SubText>This is the place where your dream tour begins</SubText>
       </TextContainer>
     </Wrap>
-    <Video src="/img/video.mp4" autoPlay muted loop preload="auto" />
+    <Video
+      src={`${configuration.api.backend_api}/img/video.mp4`}
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="auto"
+    />
   </>
 )
 

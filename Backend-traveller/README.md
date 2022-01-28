@@ -38,6 +38,7 @@ Node.js environment
 
 `npm install` </br>
 `npm start` </br>
+`add dotenv file` </br>
 
 # Coding Standard
 

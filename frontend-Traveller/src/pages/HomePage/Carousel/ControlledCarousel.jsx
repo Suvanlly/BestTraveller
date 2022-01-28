@@ -13,6 +13,7 @@ import {
   Text,
   Image,
 } from "./styles/carousel"
+import configuration from "../../../config/config"
 
 class ControlledCarousel extends Component {
   constructor(props) {
@@ -52,7 +53,7 @@ class ControlledCarousel extends Component {
           </Carousel.Caption>
           <Image
             className="d-block"
-            src="/img/carousel/carousel-1.jpg"
+            src={`${configuration.api.backend_api}/img/carousel/carousel-1.jpg`}
             alt="slide"
           />
         </Carousel.Item>
@@ -75,7 +76,7 @@ class ControlledCarousel extends Component {
           </Carousel.Caption>
           <Image
             className="d-block"
-            src="/img/carousel/carousel-2.jpg"
+            src={`${configuration.api.backend_api}/img/carousel/carousel-2.jpg`}
             alt="slide"
           />
         </Carousel.Item>
@@ -99,7 +100,7 @@ class ControlledCarousel extends Component {
           </Carousel.Caption>
           <Image
             className="d-block"
-            src="/img/carousel/carousel-3.jpg"
+            src={`${configuration.api.backend_api}/img/carousel/carousel-3.jpg`}
             alt="slide"
           />
         </Carousel.Item>

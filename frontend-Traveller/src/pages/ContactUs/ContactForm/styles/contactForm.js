@@ -305,14 +305,15 @@ export const Input = styled.input`
     width: 300px;
   }
 `
-export const Message = styled.textarea`
+export const Message = styled.input`
   font-family: Poppins;
   width: 515px;
   height: 173px;
   float: right;
   margin-left: 0;
   margin-bottom: 15px;
-  padding: 24px 26px 0;
+  padding-left: 26px;
+  padding-bottom: 120px;
   flex-grow: 0;
   border-radius: 5px;
   border: solid 1px #c4c4c4;

@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 const crypto = require('crypto');
 const { generateToken } = require('../../../utils/auth');
 const User = require('../../../models/user');
@@ -36,6 +35,7 @@ const createSendToken = (user, statusCode, res) => {
   const token = generateToken(user._id)
 
   // Remove password from output
+  // eslint-disable-next-line no-param-reassign
   user.password = undefined
 
   res.status(statusCode).json({
@@ -63,7 +63,7 @@ exports.forgotPassword = async (req, res) => {
 
   // Send it to user's email
   try {
-    const resetURL = `${req.protocol}://${req.get('host')}/api/v1/auth/resetPassword/${resetToken}`
+    const resetURL = `${resetToken}`
     await new Email(user, resetURL).sendPasswordReset()
 
     res.status(200).json({

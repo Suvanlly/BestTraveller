@@ -42,6 +42,11 @@ export const NavbarLeft = styled.div`
       margin-left: 20px;
     }
   }
+  @media ${device.tablet} {
+    &:first-child {
+      padding-right: 5px;
+    }
+  }
 `
 
 export const NavbarRight = styled(NavbarLeft)`
@@ -161,5 +166,13 @@ export const UserName = styled.span`
   @media ${device.laptop} {
     font-size: 18px;
     padding-right: 60px;
+  }
+`
+
+export const Logo = styled.img`
+  display: none;
+  @media ${device.laptop} {
+    display: inline-block;
+    vertical-align: bottom;
   }
 `

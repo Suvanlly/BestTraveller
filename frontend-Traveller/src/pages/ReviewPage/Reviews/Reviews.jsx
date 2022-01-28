@@ -24,6 +24,7 @@ import {
   Comment,
   Img,
 } from "./styles/reviews"
+import configuration from "../../../config/config"
 
 class Reviews extends Component {
   constructor(props) {
@@ -79,7 +80,7 @@ class Reviews extends Component {
               {myReviews.map((review) => (
                 <ReviewCard key={Math.random()}>
                   <Img
-                    src={`/img/tours/${review.tourImage}.jpg`}
+                    src={`${configuration.api.backend_api}/img/tours/${review.tourImage}.jpg`}
                     alt="promotion image"
                   />
                   <Title>{review.tourTitle}</Title>

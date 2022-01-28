@@ -27,6 +27,7 @@ import {
   IconNew,
   IconConfirm,
 } from "./styles/profile"
+import configuration from "../../../config/config"
 
 class Profile extends Component {
   constructor(props) {
@@ -127,7 +128,7 @@ class Profile extends Component {
           <Right>
             <Header>Personal Information</Header>
             <Photo
-              src={`/img/users/${userImage}`}
+              src={`${configuration.api.backend_api}/img/users/${userImage}`}
               id="userImage"
               alt="profile"
             />

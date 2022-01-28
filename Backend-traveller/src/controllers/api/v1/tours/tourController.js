@@ -4,39 +4,6 @@ const Tour = require('../../../../models/tour/tour');
 const Booking = require('../../../../models/booking');
 const Review = require('../../../../models/review');
 
-// PUT one tour
-exports.updateTour = async (req, res) => {
-  const { slug } = req.params;
-  const { state, city, title, subtitle, introduction, highlights, included,
-    itinerary, price, image, startDate, endDate, map } = req.body;
-
-  if (moment(startDate, "DD/MM/YYYY").isAfter(moment(endDate, "DD/MM/YYYY"))) {
-    return res.status(400).send('End date should not be prior to the Start date');
-  }
-
-  const tour = await Tour.findOneAndUpdate({slug},
-    { state, city, title, subtitle, introduction, highlights, included, itinerary, price, image, map, startDate, endDate },
-    {new: true, runValidators: true}, (err)=>{
-      if(err){
-        return res.status(422).json(err)
-      }
-  }).exec();
-  if (!tour) {
-    return res.sendStatus(404);
-  }
-  return res.status(200).json(tour);
-};
-
-// DELETE one tour
-exports.deleteTour = async (req, res) => {
-  const { slug } = req.params;
-  const tour = await Tour.findOneAndRemove({slug}).exec();
-  if (!tour) {
-    return res.sendStatus(404);
-  }
-  return res.status(204).json(tour);
-};
-
 // POST one tour
 exports.createTour = async (req, res) => {
   const { city, state, title, subtitle, introduction, highlights,
@@ -103,7 +70,39 @@ exports.getAllTours = async (req, res) => {
   .populate('availability').populate('bookings')
   .populate('reviews').exec();
   return res.json(tour);
+};
 
+// PUT one tour
+exports.updateTour = async (req, res) => {
+  const { slug } = req.params;
+  const { state, city, title, subtitle, introduction, highlights, included,
+    itinerary, price, image, startDate, endDate, map } = req.body;
+
+  if (moment(startDate, "DD/MM/YYYY").isAfter(moment(endDate, "DD/MM/YYYY"))) {
+    return res.status(400).send('End date should not be prior to the Start date');
+  }
+
+  const tour = await Tour.findOneAndUpdate({slug},
+    { state, city, title, subtitle, introduction, highlights, included, itinerary, price, image, map, startDate, endDate },
+    {new: true, runValidators: true}, (err)=>{
+      if(err){
+        return res.status(422).json(err)
+      }
+  }).exec();
+  if (!tour) {
+    return res.sendStatus(404);
+  }
+  return res.status(200).json(tour);
+};
+
+// DELETE one tour
+exports.deleteTour = async (req, res) => {
+  const { slug } = req.params;
+  const tour = await Tour.findOneAndRemove({slug}).exec();
+  if (!tour) {
+    return res.sendStatus(404);
+  }
+  return res.status(204).json(tour);
 };
 
 // Availability

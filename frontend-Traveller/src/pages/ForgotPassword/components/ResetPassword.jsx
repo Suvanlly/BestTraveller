@@ -16,7 +16,6 @@ class ResetPassword extends Component {
       token: "",
       password: "",
     }
-    this.resetPassword = this.resetPassword.bind(this)
   }
 
   handleChange(e) {
@@ -31,9 +30,9 @@ class ResetPassword extends Component {
       <Background>
         <Wrapper>
           <Text style={{ padding: "80px 0 50px" }}>
-            Please enter the token that sent to your email
+            Please enter the secret key that sent to your email
           </Text>
-          <Title>Token</Title>
+          <Title>Secret key</Title>
           <InputBox
             id="token"
             type="password"

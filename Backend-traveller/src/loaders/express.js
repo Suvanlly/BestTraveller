@@ -7,7 +7,7 @@ const config = require('../config/app');
 module.exports = async (app) => {
   app.use(logger('dev'));
   app.use(express.static('public'))
-  app.use(cors({ credentials: true, origin: 'http://localhost:3000' }))
+  app.use(cors())
   app.use(express.json());
   app.use(config.api.prefix, apiRouter);
   return app;

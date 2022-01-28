@@ -119,9 +119,6 @@ class Register extends React.Component {
     const error = this.validation(data)
     let component
 
-    if (showModal === undefined) {
-      component = null
-    }
     if (showModal === true && isRegister === false) {
       component = (
         <Card

@@ -20,6 +20,10 @@ export const getTour = (slug) => (dispatch) => {
 
 export const sendComment =
   (userEmail, userImage, userFirstName, content, tour) => () => {
+    if (content === "") {
+      swal("Oops", "Comment cannot be empty", "error")
+      return
+    }
     axios({
       method: "POST",
       url: `${configuration.api.backend_api}/api/v1/reviews/`,
@@ -45,6 +49,6 @@ export const sendComment =
         })
       })
       .catch((err) => {
-        swal("Oops", "Comment cannot be empty", "error")
+        swal("Oops", "Something went wrong", "error")
       })
   }

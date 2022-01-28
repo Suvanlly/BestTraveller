@@ -60,6 +60,6 @@ export const Input = styled.input`
   padding-left: 10px;
   border: none;
   &::placeholder {
-    color: black;
+    color: hsl(0, 0%, 50%);
   }
 `

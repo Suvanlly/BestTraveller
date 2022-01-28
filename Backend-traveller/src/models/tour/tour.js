@@ -79,7 +79,6 @@ const tourSchema = new Schema({
       type: [Number],
     }
   },
-
   startDate: {
     type: String,
     required: true,

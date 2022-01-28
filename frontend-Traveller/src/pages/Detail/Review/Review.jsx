@@ -11,6 +11,7 @@ import {
   Title,
   Comment,
 } from "./styles/style"
+import configuration from "../../../config/config"
 
 const Review = ({ reviews }) => (
   <>
@@ -19,7 +20,9 @@ const Review = ({ reviews }) => (
       // eslint-disable-next-line react/prop-types
       reviews.map((data) => (
         <ReviewWrapper key={Math.random()}>
-          <Avatar src={`/img/users/${data.userImage}`} />
+          <Avatar
+            src={`${configuration.api.backend_api}/img/users/${data.userImage}`}
+          />
           <NameWrap>
             <Name>{data.userFirstName}</Name>
             <Date>

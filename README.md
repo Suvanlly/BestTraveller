@@ -48,6 +48,8 @@ Node.js environment
 
 `npm install` </br>
 `npm start` </br>
+`frontend-src-config.js-edit api address` </br>
+`backend-add dotenv file to enable connection with mongodb` </br>
 
 # Coding Standard
 

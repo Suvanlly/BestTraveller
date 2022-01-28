@@ -2,7 +2,7 @@
   "name": "project3-traveler",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://127.0.0.1:8000",
+  "proxy": "http://ec2-54-252-92-150.ap-southeast-2.compute.amazonaws.com:8000/public",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",

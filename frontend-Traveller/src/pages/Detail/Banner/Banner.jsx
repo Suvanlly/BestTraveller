@@ -12,6 +12,7 @@ import {
 } from "./styles/banner"
 import { ReactComponent as LocationSVG } from "./img/location.svg"
 import "./styles/banner.css"
+import configuration from "../../../config/config"
 
 class Banner extends Component {
   capitalize(string) {
@@ -28,10 +29,15 @@ class Banner extends Component {
       <>
         <Title>{title}</Title>
         <Location>
-          <LocationSVG style={{ marginRight: "10px" }} />
+          <LocationSVG
+            style={{ width: "30px", height: "30px", marginRight: "10px" }}
+          />
           {city}, {state}
         </Location>
-        <Image src={`/img/detail/${image}.jpg`} alt="tourImage" />
+        <Image
+          src={`${configuration.api.backend_api}/img/detail/${image}.jpg`}
+          alt="tourImage"
+        />
         <Specification>
           <Item>
             <MaterialIcon icon="local_offer" />

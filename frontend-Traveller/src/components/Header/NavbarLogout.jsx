@@ -3,6 +3,7 @@ import { connect } from "react-redux"
 import { Link, withRouter } from "react-router-dom"
 import PropTypes from "prop-types"
 import * as actionCreators from "./store/actionCreators"
+import logo from "./img/logo.png"
 import {
   Wrap,
   NavbarLeft,
@@ -11,13 +12,17 @@ import {
   Avatar,
   UserName,
   Logout,
+  Logo,
 } from "./styles/navbar"
+import configuration from "../../config/config"
 
 const NavbarLogout = ({ isShow, logout, userImage, userFirstName }) => (
   <Wrap>
     <NavbarLeft>
       <Link to="/">
-        <Item href="/">BestTraveller</Item>
+        <Item href="/">
+          <Logo src={logo} alt="Logo" />
+        </Item>
       </Link>
       <Link to="/">
         <Item>Home</Item>
@@ -35,7 +40,10 @@ const NavbarLogout = ({ isShow, logout, userImage, userFirstName }) => (
     <NavbarRight>
       {isShow && <Logout onClick={logout}>Log out</Logout>}
       <Link to="/user">
-        <Avatar src={`/img/users/${userImage}`} alt="User" />
+        <Avatar
+          src={`${configuration.api.backend_api}/img/users/${userImage}`}
+          alt="User"
+        />
       </Link>
       <UserName>{userFirstName}</UserName>
     </NavbarRight>

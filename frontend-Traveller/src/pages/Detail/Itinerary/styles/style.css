@@ -5,6 +5,7 @@
 }
 
 .nav-link {
+  font-size: 25px;
   color: rgb(58, 178, 179);
 }
 
@@ -15,38 +16,37 @@
   line-height: normal;
 }
 @media screen and (max-width: 2560px) {
-  .mb-3{
+  .mb-3 {
     width: 90%;
     margin-left: 130px;
   }
 }
 @media screen and (max-width: 1440px) {
-  .mb-3{
+  .mb-3 {
     width: 90%;
     margin-left: 70px;
   }
 }
 @media screen and (max-width: 768px) {
-  .mb-3{
+  .mb-3 {
     width: 90%;
     margin-left: 40px;
   }
 }
 @media screen and (max-width: 525px) {
-  .mb-3{
+  .mb-3 {
     width: 90%;
     margin-left: 35px;
-  }  
+  }
 }
 @media screen and (max-width: 375px) {
-  .mb-3{
+  .mb-3 {
     width: 90%;
     margin-left: 25px;
   }
-  
 }
 @media screen and (max-width: 320px) {
-  .mb-3{
+  .mb-3 {
     width: 90%;
     margin-left: 20px;
   }

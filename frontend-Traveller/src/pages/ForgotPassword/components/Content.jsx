@@ -16,7 +16,6 @@ class Content extends Component {
     this.state = {
       email: "",
     }
-    this.sendEmail = this.sendEmail.bind(this)
   }
 
   handleEmailChange(e) {

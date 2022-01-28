@@ -57,14 +57,14 @@ export const getTour = (slug) =>
 
 export const getSearchedTours = (city, state, dateConvert, price) =>
   axios.get(
-    `http://localhost:8000/api/v1/tours?$city=${city}&state=${state}&startDate=${dateConvert}&price=${price}`
+    `${configuration.api.backend_api}/api/v1/tours?$city=${city}&state=${state}&startDate=${dateConvert}&price=${price}`
   )
 
 export const bookTour = async (userId, tourId) => {
   // get checkout session from API
   const session = await axios({
     method: "GET",
-    url: `http://127.0.0.1:3000/api/v1/bookings/checkout-session/${userId}/${tourId}`,
+    url: `${configuration.api.backend_api}/api/v1/bookings/checkout-session/${userId}/${tourId}`,
     withCredentials: true,
   })
   // create checkout from charge credit card

@@ -19,6 +19,7 @@ import {
 } from "./styles/search"
 import "./styles/search.css"
 import SearchIcon from "./img/search.png"
+import configuration from "../../../config/config"
 
 class CardContainer extends Component {
   constructor(props) {
@@ -103,7 +104,11 @@ class CardContainer extends Component {
         <SearchWrapper>
           <DestinationWrapper>
             <Title>Select your destination city</Title>
-            <Input id="city" onChange={(e) => this.handleChange(e)} />
+            <Input
+              id="city"
+              placeholder="Sydney"
+              onChange={(e) => this.handleChange(e)}
+            />
           </DestinationWrapper>
           <StateWrapper>
             <Title>Select your state</Title>
@@ -160,7 +165,10 @@ class CardContainer extends Component {
             />
           ))
         ) : (
-          <PromCard source="notFound" noLink />
+          <img
+            src={`${configuration.api.backend_api}/img/tours/notFound.jpg`}
+            alt="Not Found"
+          />
         )}
       </Wrap>
     )

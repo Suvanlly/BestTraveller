@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { Tab, Tabs } from "react-bootstrap"
 import { Title, CardWrapper, CardText, CardImage } from "./styles/style"
 import "./styles/style.css"
+import configuration from "../../../config/config"
 
 function Itinerary({ itinerary }) {
   const [key, setKey] = useState("day1")
@@ -22,7 +23,9 @@ function Itinerary({ itinerary }) {
             title={`Day ${i + 1}`}
           >
             <CardWrapper>
-              <CardImage src={`/img/tours/itinerary/${data.image}`} />
+              <CardImage
+                src={`${configuration.api.backend_api}/img/tours/itinerary/${data.image}`}
+              />
               <CardText>{data.route}</CardText>
             </CardWrapper>
           </Tab>
