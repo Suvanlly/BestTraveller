@@ -1,7 +1,9 @@
+# env file
+.env
 # Node artifact files
 node_modules/
-build/
 dist/
+
 
 # Compiled Java class files
 *.class
@@ -11,7 +13,8 @@ dist/
 
 # Log files
 *.log
-
+# Environments files
+.env
 # Package files
 *.jar
 
@@ -37,7 +40,6 @@ Thumbs.db
 *.war
 
 # Large media files
-*.mp4
 *.tiff
 *.avi
 *.flv
