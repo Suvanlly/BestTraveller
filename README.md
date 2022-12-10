@@ -61,17 +61,17 @@ Node.js environment
 `1. frontend -> Src -> config.js need to change to correct api address` </br>
 `2. after backend running on port: 8000 successfully, npm start frontend` </br>
 
-## Website Preview
-`Homepage` </br>
+# Website Preview
+Homepage
 ![Product Name Screen Shot](frontend-Traveller/src/readme/homePage.png)
 
-`Promotion section` </br>
+Promotion section
 ![Product Name Screen Shot](frontend-Traveller/src/readme/promotions.png)
 
-`Packages page` </br>
+Packages page
 ![Product Name Screen Shot](frontend-Traveller/src/readme/packages.png)
 
-`Tour details` </br>
+Tour details
 ![Product Name Screen Shot](frontend-Traveller/src/readme/tourDetail.png)
 
 # Coding Standard
