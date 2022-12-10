@@ -48,8 +48,18 @@ Node.js environment
 
 `npm install` </br>
 `npm start` </br>
+
+# Backend
+`Always run backend first!` </br> 
+`backend:` </br>
+`1. add dotenv file to enable connection with mongodb` </br> 
+`2. node app.js` </br> 
+`2. npm start` </br> 
+
+# Frontend
 `frontend: src config.js need to edit api address` </br>
-`backend: add dotenv file to enable connection with mongodb` </br>
+`1. frontend -> Src -> config.js need to change to correct api address` </br>
+`2. after backend running on port: 8000 successfully, npm start frontend` </br>
 
 # Coding Standard
 
