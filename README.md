@@ -62,17 +62,31 @@ Node.js environment
 `2. after backend running on port: 8000 successfully, npm start frontend` </br>
 
 # Website Preview
-<b>Homepage</b>
-![Product Name Screen Shot](frontend-Traveller/src/readme/homePage.png)
+<h4>Homepage</h4>
 
-Promotion section
+![Product Name Screen Shot](frontend-Traveller/src/readme/homePage.png)
+![Product Name Screen Shot](frontend-Traveller/src/readme/footer.png) </br>
+
+<h4>Promotion section</h4>
+
 ![Product Name Screen Shot](frontend-Traveller/src/readme/promotions.png)
 
-Packages page
+<h4>Packages page</h4> 
+
 ![Product Name Screen Shot](frontend-Traveller/src/readme/packages.png)
 
-Tour details
-![Product Name Screen Shot](frontend-Traveller/src/readme/tourDetail.png)
+<h4>Tour details</h4>
+
+![Product Name Screen Shot](frontend-Traveller/src/readme/tours_detail.png)
+
+<h4>Forgot Password page</h4>
+
+![Product Name Screen Shot](frontend-Traveller/src/readme/forgot_password.png)
+
+<h4>Contact us page</h4>
+
+![Product Name Screen Shot](frontend-Traveller/src/readme/contact_us.png)
+
 
 # Coding Standard
 
