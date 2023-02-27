@@ -62,7 +62,7 @@ Node.js environment
 `2. after backend running on port: 8000 successfully, npm start frontend` </br>
 
 # Website Preview
-Homepage
+<b>Homepage</b>
 ![Product Name Screen Shot](frontend-Traveller/src/readme/homePage.png)
 
 Promotion section
