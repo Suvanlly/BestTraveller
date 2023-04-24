@@ -91,7 +91,7 @@ Node.js environment
 # Coding Standard
 
 - Eslint - Airbnb
-- CamelCase
+- DRY standard
 
 # Test
 
